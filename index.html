@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My-Portfolio-Kristina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="logo">Portfolio</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Project</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menu-button" aria-expanded="false">
+            ☰
+        </button>
+    </nav>
+  </header>
+
+  <section class="video-section">
+    <video id="hero-video" loop muted>
+      <source src="C:\Users\Lenovo\Downloads\4065635-uhd_4096_2160_25fps.mp4"type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">Portfolio</div>
+   
+  </section>
+
+
+  <section id="skills" class="section skills-section">
+  <h2>My Skills</h2>
+
+  <div class="skills-flex">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Responsive Design</div>
+      <div class="skill-card">UI/UX Basics</div>
+      <div class="skill-card">Canvas & Media Work</div>
+  </div>
+</section>
+
+
+  <section class="section grid-section">
+    <h2>My Project</h2>
+    <div class="grid-container">
+      <div class="card">Project 1</div>
+      <div class="card">Project 2</div>
+      <div class="card">Project 3</div>
+  
+    </div>
+    <br>
+    <button id="add-card">Add New Card</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <form id="contact-form">
+        <label>Name:</label>
+        <input id="name" type="text" placeholder="">
+
+        <label>Email:</label>
+        <input id="email" type="email" placeholder="">
+
+        <label>Message:</label>
+        <textarea id="message" rows="4" placeholder=""></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <div id="form-message"></div>
+</section>
+
+
+  <footer class="footer">
+    © 2025 Portfolio – Built with HTML5, CSS3 & JavaScript
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
